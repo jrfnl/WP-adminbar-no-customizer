@@ -1,2 +1,4 @@
-# WP-adminbar-no-customizer
-Moves the Customizer link from the Adminbar top level to be a subitem under the site-menu.
+WP-adminbar-no-customizer
+==================================
+
+Tiny plugin which moves the Customizer link away from the admin bar top-level.
