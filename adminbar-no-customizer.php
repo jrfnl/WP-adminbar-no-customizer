@@ -39,7 +39,7 @@ if ( ! function_exists( 'adminbar_no_customizer' ) ) {
 
 		// Check if the customizer node exists.
 		if ( $node ) {
-			$args = $node;
+			$args         = $node;
 			$args->parent = 'appearance';
 			$wp_admin_bar->add_node( $args );
 		}
@@ -48,7 +48,6 @@ if ( ! function_exists( 'adminbar_no_customizer' ) ) {
 }
 
 if ( ! function_exists( 'adminbar_no_customizer_no_icon' ) ) {
-
 	/**
 	 * Remove the icon from the customizer item once moved to the submenu.
 	 */
