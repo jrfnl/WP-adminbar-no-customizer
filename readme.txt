@@ -3,7 +3,7 @@ Contributors: jrf
 Donate link: https://www.paypal.com/cgi-bin/webscr?cmd=_s-xclick&hosted_button_id=995SSNDTCVBJG
 Tags: adminbar, admin bar, customizer
 Requires at least: 4.3
-Tested up to: 4.5
+Tested up to: 4.8
 Stable tag: 1.0
 License: GPLv2
 
@@ -26,7 +26,9 @@ If you like this plugin, please [rate and/or review](http://wordpress.org/suppor
 
 == Changelog ==
 
-= 1.0 (2015-12-18) =
+= 1.0 =
+_Release date: 2015-12-18_
+
 * Initial release
 
 
