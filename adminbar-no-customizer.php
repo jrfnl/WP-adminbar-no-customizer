@@ -5,19 +5,19 @@
  * @package     WordPress\Plugins\Adminbar No Customizer
  * @author      Juliette Reinders Folmer <wpplugins_nospam@adviesenzo.nl>
  * @link        https://github.com/jrfnl/WP-adminbar-no-customizer
- * @version     1.0
+ * @version     1.0.1
  *
- * @copyright   2015-2016 Juliette Reinders Folmer
+ * @copyright   2015-2018 Juliette Reinders Folmer
  * @license     http://creativecommons.org/licenses/GPL/2.0/ GNU General Public License, version 2 or higher
  *
  * @wordpress-plugin
  * Plugin Name: Adminbar No Customizer
  * Plugin URI:  http://wordpress.org/plugins/adminbar-no-customizer/
  * Description: Moves the Customizer link from the Adminbar top level to be a subitem under the site-menu.
- * Version:     1.0
+ * Version:     1.0.1
  * Author:      Juliette Reinders Folmer
  * Author URI:  http://www.adviesenzo.nl/
- * Copyright:   2015-2016 Juliette Reinders Folmer
+ * Copyright:   2015-2018 Juliette Reinders Folmer
  */
 
 // Avoid direct calls to this file.
