@@ -32,7 +32,7 @@
 
 	<!-- ##### PHP cross-version compatibility ##### -->
 	<config name="testVersion" value="5.2-"/>
-	<rule ref="PHPCompatibility"/>
+	<rule ref="PHPCompatibilityWP"/>
 
 	<!-- ##### WordPress sniffs ##### -->
 	<!-- Set minimum supported WP version for all sniffs which use it. -->
