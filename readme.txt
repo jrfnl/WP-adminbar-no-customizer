@@ -6,6 +6,7 @@ Requires at least: 4.3
 Tested up to: 4.9
 Stable tag: 1.0.1
 License: GPLv2
+Requires PHP: 5.2.6
 
 Moves the Customizer link from the Adminbar top level to be a subitem under the site-menu.
 
