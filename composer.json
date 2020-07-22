@@ -1,0 +1,27 @@
+{
+    "name" : "jrfnl/adminbar-no-customizer",
+    "description" : "WordPress plugin which moves the Customizer link from the Adminbar top level to be a subitem under the site-menu.",
+    "keywords"   : ["wordpress", "plugin" ],
+    "type"       : "wordpress-plugin",
+    "license"    : "GPL-2.0-or-later",
+    "authors"    : [
+        {
+            "name"    : "Juliette Reinders Folmer",
+            "homepage": "https://github.com/jrfnl"
+        }
+    ],
+    "support"    : {
+        "issues": "https://github.com/jrfnl/WP-adminbar-no-customizer/issues",
+        "source": "https://github.com/jrfnl/WP-adminbar-no-customizer"
+    },
+    "require": {
+        "php" : ">=5.2"
+    },
+    "require-dev": {
+        "wp-coding-standards/wpcs": "^2.0",
+        "phpcompatibility/phpcompatibility-wp": "^2.0",
+        "dealerdirect/phpcodesniffer-composer-installer": "^0.6.2 || ^0.7"
+    },
+    "minimum-stability" : "RC",
+    "prefer-stable": true
+}
