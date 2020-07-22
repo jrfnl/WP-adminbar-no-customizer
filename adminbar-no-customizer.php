@@ -7,7 +7,7 @@
  * @link        https://github.com/jrfnl/WP-adminbar-no-customizer
  * @version     1.0.1
  *
- * @copyright   2015-2018 Juliette Reinders Folmer
+ * @copyright   2015-2020 Juliette Reinders Folmer
  * @license     http://creativecommons.org/licenses/GPL/2.0/ GNU General Public License, version 2 or higher
  *
  * @wordpress-plugin
@@ -17,7 +17,7 @@
  * Version:     1.0.1
  * Author:      Juliette Reinders Folmer
  * Author URI:  http://www.adviesenzo.nl/
- * Copyright:   2015-2018 Juliette Reinders Folmer
+ * Copyright:   2015-2020 Juliette Reinders Folmer
  */
 
 // Avoid direct calls to this file.
@@ -32,6 +32,8 @@ if ( ! function_exists( 'adminbar_no_customizer' ) ) {
 	 * Move the Customizer link from the Adminbar top-level to be a sub-item under the site-menu.
 	 *
 	 * @param object $wp_admin_bar The admin bar object. Gets passed by reference.
+	 *
+	 * @return void
 	 */
 	function adminbar_no_customizer( $wp_admin_bar ) {
 
@@ -50,6 +52,8 @@ if ( ! function_exists( 'adminbar_no_customizer' ) ) {
 if ( ! function_exists( 'adminbar_no_customizer_no_icon' ) ) {
 	/**
 	 * Remove the icon from the customizer item once moved to the submenu.
+	 *
+	 * @return void
 	 */
 	function adminbar_no_customizer_no_icon() {
 		echo '<style type="text/css">#wpadminbar #wp-admin-bar-customize > .ab-item:before { content: normal; }</style>';
