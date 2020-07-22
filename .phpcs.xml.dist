@@ -2,44 +2,69 @@
 <ruleset name="Adminbar No Customizer">
 	<description>The code standard for Adminbar No Customizer is WordPress.</description>
 
-	<!-- Pass some flags to PHPCS:
-		 p flag: Show progress of the run.
-		 s flag: Show sniff codes in all reports.
-		 v flag: Print verbose output.
-		 n flag: Do not print warnings.
+	<!--
+	#############################################################################
+	COMMAND LINE ARGUMENTS
+	https://github.com/squizlabs/PHP_CodeSniffer/wiki/Annotated-ruleset.xml
+	#############################################################################
 	-->
-	<arg value="ps"/>
 
-	<!-- Only check the PHP files. -->
+	<!-- Scan all files. -->
+	<file>./adminbar-no-customizer.php</file>
+
+	<!-- Only check PHP files. -->
 	<arg name="extensions" value="php"/>
 
-	<!-- Check all files in this directory and the directories below it. -->
-	<file>./adminbar-no-customizer.php</file>
-	
-	<!-- Set minimum supported WP version for all sniffs which use it. -->
-	<config name="minimum_supported_wp_version" value="4.3"/>
+	<!-- Show progress, show the error codes for each message (source). -->
+	<arg value="sp"/>
+
+	<!-- Strip the filepaths down to the relevant bit. -->
+	<arg name="basepath" value="./"/>
+
+	<!-- Check up to 8 files simultaneously. -->
+	<arg name="parallel" value="8"/>
+
+	<!--
+	#############################################################################
+	USE THE WordPress and the PHPCompatibility RULESETS
+	#############################################################################
+	-->
 
 	<!-- ##### PHP cross-version compatibility ##### -->
 	<config name="testVersion" value="5.2-"/>
 	<rule ref="PHPCompatibility"/>
 
 	<!-- ##### WordPress sniffs ##### -->
+	<!-- Set minimum supported WP version for all sniffs which use it. -->
+	<config name="minimum_supported_wp_version" value="4.3"/>
+
 	<rule ref="WordPress">
 		<!-- No need to lint the PHP, this is done in a separate task in the travis script. -->
 		<exclude name="Generic.PHP.Syntax"/>
 	</rule>
 
+
+	<!--
+	#############################################################################
+	SNIFF SPECIFIC CONFIGURATION
+	#############################################################################
+	-->
+
 	<!-- Enable verification that all I18n calls use the correct text-domain. -->
 	<rule ref="WordPress.WP.I18n">
 		<properties>
-			<property name="text_domain" type="array" value="adminbar-no-customizer"/>
+			<property name="text_domain" type="array">
+				<element value="adminbar-no-customizer"/>
+			</property>
 		</properties>
 	</rule>
 
 	<!-- Enable verification that everything in the global namespace is prefixed. -->
 	<rule ref="WordPress.NamingConventions.PrefixAllGlobals">
 		<properties>
-			<property name="prefixes" type="array" value="adminbar_no_customizer" />
+			<property name="prefixes" type="array">
+				<element value="adminbar_no_customizer"/>
+			</property>
 		</properties>
 	</rule>
 
